@@ -20,6 +20,7 @@ jobs:
     - run: npm run cy:run
       continue-on-error: true
     - run: npm run report:merge
+      continue-on-error: true
     - run: npm run report:mocha
     
     - name: Deploy to GitHub Pages
